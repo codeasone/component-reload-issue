@@ -3,7 +3,7 @@
 ## Context
 I'm trying to combine `component` with `lein-ring` to support various workflows.
 
-I half-expected reloading issues. I'm not sure whether I have any option other than to introduce a global singleton `defroutes` to work-around the problem I'm facing.
+I'm not sure whether I have any option other than to introduce a global `system-map` to work-around the reloading issues I'm experiencing.
 
 ## TL;DR
 
