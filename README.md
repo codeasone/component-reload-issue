@@ -96,4 +96,4 @@ The way I'm joining up `lein-ring` and `component` is via the `:init` facility:
 When `lein ring server-headless` is invoked, the `:init` function is invoked which first calls `(component/start)` on the system (injecting dependencies etc.) and then defines the var `ring-handler` which is referenced by `:handler`.
 
 ## Question
-Is there a way for me to achieve the reloading behaviour I want with `lein-ring`, whilst also maintaining the encapsulation and testing advantages that `component` brings *without* introducing a global `system-map` and `defroutes`?
+Is there a way for me to achieve the reloading behaviour I want with `lein-ring`, whilst also maintaining the encapsulation and testing advantages that `component` brings *without* introducing a global `system-map` and adandoning the componentisation and DI for `demo-routes`?
