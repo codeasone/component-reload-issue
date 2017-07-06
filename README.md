@@ -5,13 +5,6 @@ I'm trying to combine `component` with `lein-ring` to support various workflows.
 
 I'm not sure whether I have any option other than to introduce a global `system-map` to work-around the reloading issues I'm experiencing.
 
-## TL;DR
-
-- Execute `lein ring server-headless`
-- Visit `http://localhost:8000/info` and observe JSON body
-- Modify `demo-api-routes` changing JSON body
-- Revisit `http://localhost:8000/info` and observe JSON body is __unchanged__
-
 ## Reproduction
 
 To reproduce the issue, I've created a system consisting of two components
