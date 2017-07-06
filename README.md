@@ -78,7 +78,7 @@ And the `/info` returns the expected JSON containing the status `"OK"`
 
 Under `lein ring`, when I modify `demo-api-routes` e.g. changing the string `"OK"` to `"NOT OK"`, the change is not reflected in subsequent requests to `http://localhost:8000/info`
 
-This is not unexpected given the approach I'm taking. I am struggling to find a way forward that doesn't involve introducing global state. My intent is to have `component` inject dependencies into my routes via the standard practice of introducing a middleware that associates those dependencies which each incoming request.
+This is not unexpected given the approach I'm taking. I am struggling to find a way forward that doesn't involve introducing global state. My intent is to have `component` inject dependencies into my routes via the standard practice of introducing a middleware that associates those dependencies with each incoming request.
 
 When I modify `core.clj` and the `/info` route request comes in, my understanding is that `wrap-reload` is invoked.
 
